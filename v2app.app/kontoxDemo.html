@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+   <script type="text/javascript" src="https://signin.kontox.com/assets/kontox-signin-widget.js"></script>
+</head>
+<body>
+<div id="kontoxqq"></div>
+<script type="text/javascript">
+   embedKontox({
+       divId: 'kontoxqq',// where to embed KontoX widget
+       client: 'demo', // your client id
+       country: 'ru',// name of the country to filter targets by
+       locale: 'en',// widget's user interface language
+       // ownerExternalId: 'uAWMcPJDaRyusMPn', // your identifier for the user
+       onSuccess: function(target, sessionId, sessionIdSignature) {
+           // User successfully signed in to the bank
+           // Pass target, sessionId and sessionIdSignature to your backend
+               window.location='http://gwa.jetmoney.me/contox/success?target=' + target + '&sessionId=' + sessionId +'&sessionIdSignature=' + sessionIdSignature;
+       },
+       onError: function(exception) {
+               window.location='http://gwa.jetmoney.me/contox/failure';
+       }
+   });
+</script>
+</body>
+</html>

@@ -1,0 +1,42 @@
+{
+    "id" : 3,
+    "name" : "Mobile Top Up",
+    "type" : "mobiletopup",
+    "key_parameter" : "to",
+    "method": "mobile/topup",
+    "limits": [],
+    "parameters" : [{
+                    "id" : "info",
+                    "name" : "Choose a friend from your address book or enter a mobile number",
+                    "type" : "person_info",
+                    },
+                    {
+                    "id" : "to",
+                    "name" : "Phone number",
+                    "type" : "phone",
+                    "validators": [{
+                                   "type": "required",
+                                   "description": "Phone number is required"
+                                   }],
+                    "values": [{
+                               "type": "default",
+                               "value": "%USER_ID%"
+                               }]
+                    },
+                    {
+                    "id" : "amount",
+                    "name" : "Amount",
+                    "type" : "money",
+                    "validators": [{
+                                   "type": "required",
+                                   "description": "Amount is required"
+                                   }],
+                    },
+                    {
+                    "id" : "pay",
+                    "name" : "Pay",
+                    "type" : "submit",
+                    "validators": [],
+                    }]
+
+}

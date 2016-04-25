@@ -1,0 +1,90 @@
+{
+    "id" : 6,
+    "name" : "Pagar préstamo",
+    "type" : "loanrepay",
+    "method": "v2/loan/pay",
+    "limits": [],
+    "parameters" : [{
+                    "id": "currency",
+                    "name": "",
+                    "type": "hidden",
+                    "values": [{
+                               "type": "default",
+                               "value": "%LOAN_CURRENCY%"
+                               }]
+                    },
+                    {
+                    "id" : "info",
+                    "name" : "Pendiente por pagar",
+                    "type" : "info",
+                    "values": [{
+                               "type": "default",
+                               "value": "%LEFT_TO_PAY_TEXT%"
+                               }],
+                    "options": [{
+                                "name": "size",
+                                "value": "20"
+                                }]
+                    },
+                    {
+                    "id": "amount",
+                    "name": "Cantidad a devolver",
+                    "type": "number",
+                    "values": [{
+                               "type": "default",
+                               "value": "%LEFT_TO_PAY_AMOUNT%"
+                               }],
+                    "action": {
+                                "method": "updatePaymentAmount",
+                                "sender": "UPDATE_SLIDER",
+                                "receiver": "UPDATE_TEXT"
+                                },
+                    "validators": [{
+                                   "type": "required",
+                                   "description": "Se requiere cantidad"
+                                   },
+                                   {
+                                   "type": "max_value",
+                                   "value": "%LEFT_TO_PAY_AMOUNT%",
+                                   "description": "Importe del pago no puede contener más de resto de préstamos"
+                                   }],
+
+                    },
+                    {
+                    "id": "pay_amount_slider",
+                    "name": "Slider",
+                    "type": "slider",
+                    "values": [{
+                               "type": "default",
+                               "value": "%LEFT_TO_PAY_AMOUNT%"
+                               }],
+                    "options": [{
+                                "name": "maximumValue",
+                                "value": "%LEFT_TO_PAY_AMOUNT%"
+                                }],
+                    "action": {
+                                "method": "updatePaymentAmount",
+                                "sender": "UPDATE_TEXT",
+                                "receiver": "UPDATE_SLIDER"
+                              }
+                    },
+                    {
+                    "id" : "type",
+                    "name" : "Tipo de pago",
+                    "type" : "payment_type",
+                    "options": [{
+                                "name": "size",
+                                "value": "20"
+                                }],
+                    "validators": [{
+                                   "type": "required",
+                                   "description": "Por favor, seleccione el método de pago"
+                                   }],
+                    },
+                    {
+                    "id" : "pay",
+                    "name" : "PAGAR",
+                    "type" : "submit"
+                    }]
+
+}

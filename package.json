@@ -1,0 +1,31 @@
+{
+  "name": "p2y.tests",
+  "version": "1.0.0",
+  "description": "e2e test for p2y",
+  "main": "conf.js",
+  "scripts": {
+    "preupdate-webdriver": "npm install",
+    "update-webdriver": "webdriver-manager update",
+    "preprotractor": "npm run update-webdriver",
+    "protractor": "protractor conf.js",
+    "test": "npm run protractor"
+  },
+  "author": "Nebo 15",
+  "license": "MIT",
+  "devDependencies": {
+    "bower": "1.7.7",
+    "jasmine-core": "2.4.1",
+    "protractor": "3.2.1",
+    "protractor-console": "2.0.0",
+    "shelljs": "0.6.0",
+    "sleep": "3.0.1",
+    "chai": "^2.2.0",
+    "chai-as-promised": "^5.0.0",
+    "colors": "^1.0.3",
+    "express": "^4.12.3",
+    "wd": "^0.3.12",
+    "wd-bridge": "0.0.2",
+    "q": "^2.0.2",
+    "underscore": "^1.8.3"
+  }
+}

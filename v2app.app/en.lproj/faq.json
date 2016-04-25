@@ -1,0 +1,51 @@
+{
+    "items" : [{
+               "title" : "Does the first loan is completely free?",
+               "message" : "Yes, it's completely free, according to our terms and conditions.\nFor example:\nLoan amount = 300 €\nAmount owed = 300 €"
+               },
+               {
+               "title" : "Can I apply for more than one credit at the same time vivus.es?",
+               "message" : "No, you can only apply for a microloan time."
+               },
+               {
+               "title" : "What requirements must I meet to apply for a credit vivus.es?",
+               "message" : "These are the conditions for a loan with us:\n\n• Reside in Spain, and have between 21 and 75 years;\n• Have no outstanding payments or debts to third parties that may prevent payment of the Loan, including pending payments are recorded in any record of information on solvency and credit;\n• Provide all information and documentation required in the application for online credit and that this is true, accurate and current."
+               },
+               {
+               "title" : "Do I have to send some documentation if I want to apply for a microloan in vivus.es?",
+               "message" : "Yes, if you choose the option of manual identification. You have to attach a scanned copy of the front and back of your ID and bank statement in which include details of the bank account holder and the same. Such documentation is required in order to validate the information provided. You can attach documents through our website, in step 3 of the application process or send it by fax or by email."
+               },
+               {
+               "title" : "How I can identify myself without sending documentation?",
+               "message" : "You have an option to identify which does not require shipping documentation. If you have online banking and operas with your bank via the Internet, this is the option that most interests. When you get the answer to your loan application. You must choose the identification through online banking application process and enter your credentials. It is a completely safe alternative. Vivus does not store or have access to the data entered at any time."
+               },
+               {
+               "title" : "Do I have to pay a high fee to borrow?",
+               "message" : "Do not."
+               },
+               {
+               "title" : "How much amount I can claim the credit?",
+               "message" : "You can request a first minipréstamo up to 300 € depending on your age. Once returned the initial money you can apply for a second loan for an amount exceeding and so on up to a maximum of 800 €."
+               },
+               {
+               "title" : "If I pay the total of my loan, I can request a higher credit same day?",
+               "message" : "You can request a new minicredit higher amount after 7 days, provided you meet the conditions of the credit. The same day you apply for a loan of the same amount."
+               },
+               {
+               "title" : "How long will it take to receive credit once approved?",
+               "message" : "Typically, the money available in your account on the same day. However, depending on the bank you choose, you may pay a 24/48 hour delay."
+               },
+               {
+               "title" : "How long does it take to know if my application has been approved microcredit?",
+               "message" : "You will receive approval within minutes once you have provided the required information."
+               },
+               {
+               "title" : "Why was I denied credit?",
+               "message" : "All applications are subject to appropriate checks. Your request must meet the requirements of our consumer credit policy, before being approved. Vivus.es may obtain information on the credit history and risk positions of organizations providing information services on creditworthiness and credit, for analysis and, if appropriate, granting, monitoring and control of funding."
+               },
+               {
+               "title" : "Is it necessary to have a guarantor for a loan request?",
+               "message" : "No. You do not need a guarantor for a loan."
+               }]
+    
+}

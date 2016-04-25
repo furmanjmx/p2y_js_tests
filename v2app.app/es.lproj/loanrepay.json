@@ -1,0 +1,100 @@
+{
+    "id" : 6,
+    "name" : "Pay",
+    "type" : "loanrepay",
+    "key_parameter" : "loan",
+    "method": "v2/loan/pay",
+    "limits": [],
+    "parameters" : [{
+                    "id": "currency",
+                    "name": "",
+                    "type": "hidden",
+                    "values": [{
+                               "type": "default",
+                               "value": "%LOAN_CURRENCY%"
+                               }]
+                    },
+                    {
+                    "id": "loan",
+                    "name": "",
+                    "type": "hidden",
+                    "values": [{
+                               "type": "default",
+                               "value": "%LOAN_ID%"
+                               }]
+                    },
+                    {
+                    "id" : "info",
+                    "name" : "Left to pay",
+                    "type" : "info",
+                    "values": [{
+                               "type": "default",
+                               "value": "%LEFT_TO_PAY_TEXT%"
+                               }],
+                    "options": [{
+                                "name": "size",
+                                "value": "20"
+                                }]
+                    },
+                    {
+                    "id": "pay_amount",
+                    "name": "Amount",
+                    "type": "number",
+                    "values": [{
+                               "type": "default",
+                               "value": "%LEFT_TO_PAY_AMOUNT%"
+                               }],
+                    "action": {
+                                "method": "updatePaymentAmount",
+                                "sender": "UPDATE_SLIDER",
+                                "receiver": "UPDATE_TEXT"
+                                },
+                    "validators": [{
+                                   "type": "required",
+                                   "description": "Amount is required"
+                                   },
+                                   {
+                                   "type": "max_value",
+                                   "value": "%LEFT_TO_PAY_AMOUNT%",
+                                   "description": "Payment anout can't be more than loan rest"
+                                   }],
+
+                    },
+                    {
+                    "id": "pay_amount_slider",
+                    "name": "Slider",
+                    "type": "slider",
+                    "values": [{
+                               "type": "default",
+                               "value": "%LEFT_TO_PAY_AMOUNT%"
+                               }],
+                    "options": [{
+                                "name": "maximumValue",
+                                "value": "%LEFT_TO_PAY_AMOUNT%"
+                                }],
+                    "action": {
+                                "method": "updatePaymentAmount",
+                                "sender": "UPDATE_TEXT",
+                                "receiver": "UPDATE_SLIDER"
+                              }
+                    },
+                    {
+                    "id" : "type",
+                    "name" : "Payment Type",
+                    "type" : "payment_type",
+                    "options": [{
+                                "name": "size",
+                                "value": "20"
+                                }],
+                    "validators": [{
+                                   "type": "required",
+                                   "description": "Please select payment method"
+                                   }],
+                    },
+                    {
+                    "id" : "pay",
+                    "name" : "Pay",
+                    "type" : "submit"
+                    }]
+
+}

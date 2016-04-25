@@ -1,0 +1,26 @@
+{
+    "name" : "Cash Out",
+    "remoteTemplateResource": "/kyc/instantor/transfer/template",
+    "items" : [{
+               "title" : "Bank Transfer",
+               "icon" : "TopUpBankTransfer",
+               "color" : "0xF0C060",
+               "action" : "V2BankTransfer",
+               "type" : "Show"
+               },
+               {
+               "title" : "Peer To Peer",
+               "icon" : "p2p",
+               "color" : "0xF09360",
+               "action" : "p2p",
+               "type" : "DynamicPayment"
+               },
+               {
+               "title" : "Invoice",
+               "icon" : "invoices",
+               "color" : "0x81BD7F",
+               "action" : "InvoiceList",
+               "type" : "Show"
+               }]
+
+}

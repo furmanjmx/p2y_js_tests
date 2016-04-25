@@ -1,0 +1,26 @@
+{
+    "name" : "Recarga",
+    "items" : [{
+               "title" : "Tarjeta",
+               "icon" : "TopUpCard",
+               "color" : "0xF0C060",
+               "action" : "V2CardTopUp",
+               "type" : "Show"
+               },
+               {
+               "title" : "Pregúntarle a un amigo",
+               "icon" : "TopUpAskAFriend",
+               "color" : "0xF09360",
+               "action" : "askafriend",
+               "type" : "DynamicPayment"
+               },
+               {
+               "title" : "Devolver préstamo",
+               "icon" : "LoanReply",
+               "color" : "0xfa7e80",
+               "action" : "V2FullRepayViewControllerID",
+               "type" : "ShowV2",
+               "showIndicatorSelector" : "checkActiveLoan"
+               }]
+
+}

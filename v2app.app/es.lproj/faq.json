@@ -1,0 +1,51 @@
+{
+    "items" : [{
+               "title" : "¿Es el primer préstamo completamente gratis?",
+               "message" : "Sí, lo es, libre de comisiones e intereses. \nPor ejemplo:\nCantidad a solicitar = 300€\nCantidad a devolver = 300€"
+               },
+               {
+               "title" : "¿Puedo solicitar más de un préstamo al mismo tiempo en Vivus.es?",
+               "message" : "No, sólo puedes solicitar un micropréstamo cada vez."
+               },
+               {
+               "title" : "¿Qué requisitos debo cumplir para solicitar un préstamo en Vivus.es?",
+               "message" : "Estas son las condiciones para solicitar un préstamo con nosotros:\n\n• Residir en España, y tener entre 21 y 75 años;\n• No tener pagos pendientes o deudas frente a terceros que puedan impedir el pago del Préstamo, incluyendo pagos pendientes que estén anotados en cualquier registro de información sobre solvencia patrimonial y crédito;\n• Facilitar toda la información y documentación que se requiere en la solicitud del crédito online y que ésta sea cierta, veraz y actualizada."
+               },
+               {
+               "title" : "¿Tengo que enviar algún tipo de documentación si deseo solicitar un micropréstamo en Vivus.es?",
+               "message" : "Sí, si eliges la opción de identificación manual. Tienes que adjuntar una copia escaneada de la parte frontal y trasera de tu DNI, así como del extracto bancario en el que consten los datos de la cuenta bancaria y del titular de la misma. Dicha documentación es requerida con objeto de validar la información facilitada. Puedes adjuntar la documentación a través de nuestra web, en el paso 3 del proceso de solicitud o enviarla por fax o por email."
+               },
+               {
+               "title" : "¿Cómo puedo identificarme sin necesidad de enviar documentación?",
+               "message" : "Dispones de una opción para identificarte que no precisa del envío de documentación. Si tienes banca online y operas con tu banco a través de internet, esta es la opción que más te interesa. Obtienes en el momento la respuesta a tu solicitud de préstamo. Debes elegir la identificación a través de banca online en el proceso de solicitud e introducir tus credenciales. Se trata de una alternativa completamente segura. Vivus no guarda ni tiene acceso a los datos introducidos, en ningún momento."
+               },
+               {
+               "title" : "¿Tengo que pagar una cuota de alta al solicitar un préstamo?",
+               "message" : "No"
+               },
+               {
+               "title" : "¿De cuánto importe puedo solicitar el préstamo?",
+               "message" : "Puedes solicitar un primer minipréstamo de hasta 300€ en función de tu edad. Una vez devuelto el dinero inicial podrás solicitar un segundo crédito por importe superior y así sucesivamente hasta un máximo de 800€."
+               },
+               {
+               "title" : "Si pago el total de mi préstamo, ¿puedo solicitar un crédito superior el mismo día?",
+               "message" : "Podrás solicitar un nuevo minicrédito de importe superior transcurridos 7 días, siempre que cumplas las condiciones de dicho crédito. El mismo día podrás solicitar un crédito del mismo importe."
+               },
+               {
+               "title" : "¿Cuánto tiempo tendré que esperar para recibir el crédito, una vez aprobado?",
+               "message" : "Normalmente, el dinero estará disponible en tu cuenta en el mismo día. Sin embargo, dependiendo del banco que elijas, es posible que el pago se demore unas 24/48 horas."
+               },
+               {
+               "title" : "¿Cuánto tiempo tardaré en saber si mi solicitud de microcrédito ha sido aprobada?",
+               "message" : "Recibirás la aprobación en pocos minutos una vez hayas aportado la información requerida."
+               },
+               {
+               "title" : "¿Por qué ha sido mi crédito denegado?",
+               "message" : "Todas las solicitudes están sujetas a las correspondientes verificaciones. Tu solicitud debe cumplir los requisitos exigidos en nuestra política de créditos al consumo, antes de ser aprobada. Vivus.es podrá recabar información relativa a los antecedentes crediticios y posiciones de riesgo de entidades prestadoras de servicios de información sobre solvencia patrimonial y crédito, para el análisis y, en su caso, concesión, seguimiento y control de la financiación."
+               },
+               {
+               "title" : "¿Es necesario disponer de un aval para solicitar un crédito?",
+               "message" : "No. No necesitas un aval para pedir un préstamo."
+               }]
+    
+}

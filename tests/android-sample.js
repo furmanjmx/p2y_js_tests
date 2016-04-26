@@ -5,26 +5,33 @@ var wd = require("wd"),
 
 require('../helpers/setup.js');
 
-describe("android simple", function () {
+describe("p2y tests", function () {
     this.timeout(300000);
     var driver;
     var allPassed = true;
 
-    before(function () {
+    beforeEach(function () {
         var driverObj = require('../helpers/driver.js').init();
         driver = driverObj.driver;
+        driver = driver.sleep(10000);
 
         return driver.promise;
     });
 
-    after(function () {
+    afterEach(function () {
         return driver.quit();
     });
     afterEach(function () {
         allPassed = allPassed && this.currentTest.state === 'passed';
     });
 
-    it("should find an element", function () {
-        return driver.should.exists;
+    it("should find and click element", function () {
+        return driver
+            .elementByName("1").click()
+    });
+
+    it("should find and click element again", function () {
+        return driver
+            .elementByName("1").click()
     });
 });

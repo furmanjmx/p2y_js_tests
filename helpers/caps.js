@@ -2,7 +2,7 @@ var apps = require('./apps');
 
 exports.ios = {
     browserName: '',
-    "maxInstances": 1,
+    maxInstances: 1,
     platformName: "iOS",
     platformVersion: "8.4",
     deviceName: "iPhone 6",
@@ -15,6 +15,7 @@ exports.ios = {
 };
 
 exports.android = {
+    browserName: '',
     platformName: "android",
     platformVersion: "5.1",
     deviceName: "Google Nexus 4",
@@ -23,6 +24,6 @@ exports.android = {
     autoAcceptAlert: true,
     waitForAppScript: true,
     launchTimeout: 999999,
-    package: 'ua.com.deltabank.pay2you',
+    appPackage: 'ua.com.deltabank.pay2you',
     app: apps.android
 };

@@ -19,10 +19,8 @@ describe("p2y tests", function () {
     });
 
     afterEach(function () {
-        return driver.quit();
-    });
-    afterEach(function () {
         allPassed = allPassed && this.currentTest.state === 'passed';
+        return driver.quit();
     });
 
     it("should find and click element", function () {

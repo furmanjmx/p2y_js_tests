@@ -6,7 +6,7 @@ open -a /Applications/Genymotion.app/Contents/MacOS/player.app --args --vm-name 
 
 sleep 7
 
-node tests/*.js
+mocha tests/*.js --env android
 
 sleep 2
 

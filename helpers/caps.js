@@ -6,13 +6,11 @@ exports.ios = {
     platformName: "iOS",
     platformVersion: "8.4",
     deviceName: "iPhone 6",
-
     newCommandTimeout: 999999,
     sendKeyStrategy: 'setValue',
     autoAcceptAlert: true,
     waitForAppScript: true,
     launchTimeout: 999999,
-
     app: apps.ios
 };
 

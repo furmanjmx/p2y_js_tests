@@ -4,6 +4,6 @@ appium&
 
 sleep 7
 
-node tests/*.js
+mocha tests/*.js --env ios
 
 killall node

@@ -5,8 +5,7 @@
   "author": "Nebo 15",
   "license": "MIT",
   "scripts": {
-    "pretest": "npm install",
-    "test": "mocha tests/*.js --env android"
+    "test": "mocha tests/*.js --env ios"
   },
   "devDependencies": {
     "chai": "^2.2.0",

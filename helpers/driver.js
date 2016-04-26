@@ -19,8 +19,8 @@ exports.init = function (env) {
 
     var desired = _.clone(require("./caps")[env]);
 
-    return {
+    return _.clone({
         driver: driver,
         promise: driver.init(desired).setImplicitWaitTimeout(3000)
-    }
+    });
 };

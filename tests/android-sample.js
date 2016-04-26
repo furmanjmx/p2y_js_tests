@@ -20,7 +20,6 @@ describe("android simple", function () {
     after(function () {
         return driver.quit();
     });
-
     afterEach(function () {
         allPassed = allPassed && this.currentTest.state === 'passed';
     });

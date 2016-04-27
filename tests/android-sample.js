@@ -5,7 +5,7 @@ var wd = require("wd"),
 
 require('../helpers/setup.js');
 
-describe("p2y tests", function () {
+describe("Pay2You Android Tests", function () {
     this.timeout(300000);
     var driver;
     var allPassed = true;
@@ -23,8 +23,21 @@ describe("p2y tests", function () {
         return driver.quit();
     });
 
-    it("should find and click element", function () {
+    it("fill pin and phone test", function () {
         return driver
-            .elementByName("1").click()
+            // fill pin
+            .elementById("ua.com.deltabank.pay2you:id/et_p1").should.eventually.exist.sendKeys('1')
+            .elementById("ua.com.deltabank.pay2you:id/et_p2").sendKeys('2')
+            .elementById("ua.com.deltabank.pay2you:id/et_p3").sendKeys('3')
+            .elementById("ua.com.deltabank.pay2you:id/et_p4").sendKeys('4')
+            //// confirm pin
+            .elementById("ua.com.deltabank.pay2you:id/et_p1_conf").sendKeys('1')
+            .elementById("ua.com.deltabank.pay2you:id/et_p2_conf").sendKeys('2')
+            .elementById("ua.com.deltabank.pay2you:id/et_p3_conf").sendKeys('3')
+            .elementById("ua.com.deltabank.pay2you:id/et_p4_conf").sendKeys('4')
+            //// send pin
+            .elementById("ua.com.deltabank.pay2you:id/btn_ok_password").click()
+            // assert phone screen
+            .elementById("ua.com.deltabank.pay2you:id/et_phone_1").should.eventually.exist
     });
 });

@@ -24,6 +24,7 @@ exports.android = {
     autoAcceptAlert: true,
     waitForAppScript: true,
     launchTimeout: 999999,
-    appPackage: 'ua.com.deltabank.pay2you',
+    appPackage: apps.androidActivity,
+    appWaitPackage: apps.androidActivity,
     app: apps.android
 };

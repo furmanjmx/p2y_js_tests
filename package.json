@@ -1,8 +1,8 @@
 {
-  "name": "p2y.tests",
+  "name": "Pay2You Android Tests",
   "version": "1.0.0",
-  "description": "e2e test for p2y",
-  "author": "Nebo 15",
+  "description": "e2e test for Pay2You",
+  "author": "Nebo #15",
   "license": "MIT",
   "scripts": {
     "test": "mocha tests/*.js --env ios"

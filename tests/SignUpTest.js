@@ -30,12 +30,12 @@ describe("Pay2You Android Tests", function () {
             .elementById("ua.com.deltabank.pay2you:id/et_p2").sendKeys('2')
             .elementById("ua.com.deltabank.pay2you:id/et_p3").sendKeys('3')
             .elementById("ua.com.deltabank.pay2you:id/et_p4").sendKeys('4')
-            //// confirm pin
+            // confirm pin
             .elementById("ua.com.deltabank.pay2you:id/et_p1_conf").sendKeys('1')
             .elementById("ua.com.deltabank.pay2you:id/et_p2_conf").sendKeys('2')
             .elementById("ua.com.deltabank.pay2you:id/et_p3_conf").sendKeys('3')
             .elementById("ua.com.deltabank.pay2you:id/et_p4_conf").sendKeys('4')
-            //// send pin
+            // send pin
             .elementById("ua.com.deltabank.pay2you:id/btn_ok_password").should.eventually.exist.click()
             // assert and fill phone
             .elementById("ua.com.deltabank.pay2you:id/et_phone_1").should.eventually.exist.sendKeys('93')

@@ -23,7 +23,7 @@ describe("Pay2You Android Tests", function () {
         return driver.quit();
     });
 
-    it("SignUp test", function () {
+    it("sign up test", function () {
         return driver
             // fill pin
             .elementById("ua.com.deltabank.pay2you:id/et_p1").should.eventually.exist.sendKeys('1')

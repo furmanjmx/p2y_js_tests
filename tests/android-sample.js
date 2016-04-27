@@ -27,9 +27,4 @@ describe("p2y tests", function () {
         return driver
             .elementByName("1").click()
     });
-
-    it("should find and click element again", function () {
-        return driver
-            .elementByName("1").click()
-    });
 });

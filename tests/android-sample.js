@@ -23,7 +23,7 @@ describe("Pay2You Android Tests", function () {
         return driver.quit();
     });
 
-    it("fill pin and phone test", function () {
+    it("SignUp test", function () {
         return driver
             // fill pin
             .elementById("ua.com.deltabank.pay2you:id/et_p1").should.eventually.exist.sendKeys('1')
@@ -36,8 +36,14 @@ describe("Pay2You Android Tests", function () {
             .elementById("ua.com.deltabank.pay2you:id/et_p3_conf").sendKeys('3')
             .elementById("ua.com.deltabank.pay2you:id/et_p4_conf").sendKeys('4')
             //// send pin
-            .elementById("ua.com.deltabank.pay2you:id/btn_ok_password").click()
-            // assert phone screen
-            .elementById("ua.com.deltabank.pay2you:id/et_phone_1").should.eventually.exist
+            .elementById("ua.com.deltabank.pay2you:id/btn_ok_password").should.eventually.exist.click()
+            // assert and fill phone
+            .elementById("ua.com.deltabank.pay2you:id/et_phone_1").should.eventually.exist.sendKeys('93')
+            .elementById("ua.com.deltabank.pay2you:id/et_phone_2").sendKeys('125')
+            .elementById("ua.com.deltabank.pay2you:id/et_phone_3").sendKeys('42')
+            .elementById("ua.com.deltabank.pay2you:id/et_phone_4").sendKeys('12')
+            .elementById("ua.com.deltabank.pay2you:id/btn_ok_enterphone").should.eventually.exist.click()
+            // assert dashboard
+            .elementById("android:id/content").should.eventually.exist
     });
 });

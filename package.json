@@ -1,7 +1,7 @@
 {
   "name": "Pay2You.Android.Tests",
   "version": "1.0.0",
-  "description": "e2e appium tests for Pay2You",
+  "description": "e2e appium tests for Pay2You on ECMA6",
   "author": "Nebo #15",
   "license": "MIT",
   "scripts": {

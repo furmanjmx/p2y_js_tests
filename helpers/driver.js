@@ -1,4 +1,4 @@
-'use strict';
+"use strict";
 
 var wd = require("wd"),
     _ = require('underscore'),

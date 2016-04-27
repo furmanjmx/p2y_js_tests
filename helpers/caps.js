@@ -1,3 +1,5 @@
+"use strict";
+
 var apps = require('./apps');
 
 exports.ios = {

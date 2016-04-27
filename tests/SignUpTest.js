@@ -26,7 +26,7 @@ describe("Pay2You Android Tests", function () {
     it("sign up test", function () {
         return driver
             // fill pin
-            .elementById("ua.com.deltabank.pay2you:id/et_p1").should.eventually.exist.sendKeys('1')
+            .waitForElementById("ua.com.deltabank.pay2you:id/et_p1", 5000).sendKeys('1')
             .elementById("ua.com.deltabank.pay2you:id/et_p2").sendKeys('2')
             .elementById("ua.com.deltabank.pay2you:id/et_p3").sendKeys('3')
             .elementById("ua.com.deltabank.pay2you:id/et_p4").sendKeys('4')
